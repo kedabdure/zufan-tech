@@ -1,70 +1,113 @@
 import Image from "next/image";
+import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
-
-const checkIcon = (
-  <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
-    <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
-  </svg>
-);
+import { Cpu, ShieldCheck, Globe, Zap, Code, Users } from "lucide-react";
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="text-body-color mb-5 flex items-center text-lg font-medium">
-      <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
+  const features = [
+    {
+      icon: <Zap className="h-5 w-5" />,
+      title: "Blazing Speed",
+      description: "High-performance solutions with fast response times."
+    },
+    {
+      icon: <Code className="h-5 w-5" />,
+      title: "Clean Code",
+      description: "Well-structured and maintainable codebases."
+    },
+    {
+      icon: <Cpu className="h-5 w-5" />,
+      title: "Modern Tech",
+      description: "Built with the latest, future-ready tools."
+    },
+    {
+      icon: <ShieldCheck className="h-5 w-5" />,
+      title: "Robust Security",
+      description: "Strong protection for your critical data."
+    },
+    {
+      icon: <Globe className="h-5 w-5" />,
+      title: "Global Reach",
+      description: "Optimized for worldwide scalability and speed."
+    },
+    {
+      icon: <Users className="h-5 w-5" />,
+      title: "User Focused",
+      description: "Simple, engaging, and intuitive designs."
+    }
+  ];
+
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="our-expertise" className="bg-gradient-to-b from-[#F9F7F7] to-[#DBE2EF]/30 py-16 dark:from-[#112D4E] dark:to-[#3F72AF]/10 md:py-20 lg:py-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
-              />
+        <div className="-mx-4 flex flex-wrap items-center">
+          <div className="w-full px-4 lg:w-1/2">
+            <SectionTitle
+              title="Engineering Excellence"
+              paragraph="At Zufan Tech, we transform complex challenges into elegant digital solutions. Our team of seasoned architects and developers combine technical mastery with business acumen to deliver systems that drive measurable results."
+              mb="44px"
+              center={false}
+            />
 
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+            <div className="mb-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="group flex items-start space-x-4 rounded-xl p-4 transition-all duration-300 hover:bg-[#DBE2EF]/40 dark:hover:bg-[#3F72AF]/10"
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#3F72AF] p-2 text-[#F9F7F7] shadow-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
+                    {feature.icon}
                   </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#112D4E] dark:text-[#F9F7F7]">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-[#112D4E]/80 dark:text-[#DBE2EF]/90">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
+            <Link
+              href="/about"
+              className="inline-flex items-center rounded-lg bg-[#3F72AF] px-6 py-3 text-sm font-medium text-[#F9F7F7] shadow-md transition-all duration-300 hover:bg-[#112D4E] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3F72AF] focus:ring-offset-2 dark:bg-[#3F72AF] dark:hover:bg-[#112D4E]"
+            >
+              Explore Our Methodology
+              <svg
+                className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                />
-              </div>
+              </svg>
+            </Link>
+          </div>
+
+          <div className="relative w-full px-4 lg:w-1/2">
+            <div
+              className="relative mx-auto mb-12 overflow-hidden rounded-xl shadow-2xl aspect-25/24 max-w-[550px] text-center lg:m-0"
+              data-wow-delay=".15s"
+            >
+              <Image
+                src="/images/about/about1.jpg"
+                alt="about image"
+                fill
+                className="drop-shadow-three dark:drop-shadow-none"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112D4E]/80 via-transparent to-transparent" />
             </div>
+            <div className="absolute -top-6 -right-6 -z-10 h-32 w-32 rounded-full bg-[#3F72AF] opacity-20 blur-xl dark:bg-[#DBE2EF] dark:opacity-30" />
+            <div className="absolute -bottom-6 -left-6 -z-10 h-32 w-32 rounded-full bg-[#3F72AF] opacity-20 blur-xl dark:bg-[#DBE2EF] dark:opacity-30" />
           </div>
         </div>
       </div>
