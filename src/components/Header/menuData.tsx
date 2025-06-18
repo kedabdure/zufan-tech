@@ -16,7 +16,7 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "Services",
-    path: "/services",
+    // path: "/services",
     newTab: false,
     submenu: [
       {
@@ -42,13 +42,7 @@ const menuData: Menu[] = [
         title: "Tech Consulting",
         path: "/services/tech-consulting",
         newTab: false,
-      },
-      {
-        id: 35,
-        title: "AI & Machine Learning",
-        path: "/services/ai-machine-learning",
-        newTab: false,
-      },
+      }
     ],
   },
   {
@@ -59,12 +53,6 @@ const menuData: Menu[] = [
   },
   {
     id: 5,
-    title: "Careers",
-    path: "/careers",
-    newTab: false,
-  },
-  {
-    id: 6,
     title: "Blog",
     path: "/blog",
     newTab: false,

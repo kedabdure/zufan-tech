@@ -5,6 +5,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import SkillsOrbits from "@/components/SkillOrbits";
 import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
 
@@ -63,12 +64,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  }
 };
 
 export default function Home() {
@@ -79,6 +75,7 @@ export default function Home() {
       <Features />
       <AboutSectionOne />
       <AboutSectionTwo />
+      <SkillsOrbits />
       <Testimonials />
       <Blog />
       <Contact />
