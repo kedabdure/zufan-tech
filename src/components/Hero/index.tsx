@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative z-10 overflow-hidden bg-gradient-to-br from-[#fdfcfc] to-[#e7ebf3] pb-16 pt-[120px] dark:from-[#112D4E]/5 dark:to-[#3F72AF]/10 md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+      className="relative z-10 overflow-hidden bg-gradient-to-br pb-16 pt-[120px] bg-white dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">

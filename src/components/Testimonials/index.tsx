@@ -72,7 +72,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 const Testimonials = () => {
   return (
     <section
-      className="relative z-10 md:py-20 lg:py-28"
+      className="relative dark:bg-gray-900 z-10 md:py-20 lg:py-28"
     >
       <div className="container">
         <SectionTitle

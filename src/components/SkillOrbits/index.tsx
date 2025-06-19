@@ -24,7 +24,7 @@ import {
 export default function Skills() {
   return (
     <section
-      className="relative z-10 bg-[#F9F7F7] py-16 dark:bg-[#112d4e4d] md:py-20 lg:py-22"
+      className="relative z-10 bg-gray-light dark:bg-bg-color-dark md:py-20 lg:py-22"
     >
       <div className="container">
         <SectionTitle

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="max-w-[360px]">
-                <div className="mb-12 max-w-[160px] lg:mb-16">
-                  <Link href="/" className="mb-8 inline-block">
+              <div className="max-w-[400px]">
+                <div className="max-w-[160px] mb-8">
+                  <Link href="/" className="inline-block">
                     <Image
                       src="/images/logo/logo-light.svg"
                       alt="logo"
@@ -29,8 +30,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Zufan Tech is committed to delivering innovative software solutions that empower businesses through cutting-edge web and mobile technologies, driving growth, efficiency, and digital transformation.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -41,8 +41,8 @@ const Footer = () => {
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
-                      width="18"
-                      height="18"
+                      width="24"
+                      height=""
                       viewBox="0 0 22 22"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +61,8 @@ const Footer = () => {
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
-                      width="18"
-                      height="18"
+                      width="24"
+                      height=""
                       viewBox="0 0 22 22"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +83,8 @@ const Footer = () => {
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
-                      width="18"
-                      height="14"
+                      width="24"
+                      height=""
                       viewBox="0 0 18 14"
                       className="fill-current"
                     >
@@ -114,31 +114,39 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                  Quick Links
                 </h2>
-                <ul>
+                <ul className="space-y-3">
                   <li>
                     <Link
-                      href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/web-development"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Blog
+                      Web Development
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/mobile-apps"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Pricing
+                      Mobile Apps
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/cloud-solutions"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      About
+                      Cloud Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/ui-ux-design"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                    >
+                      UI/UX Design
                     </Link>
                   </li>
                 </ul>
@@ -148,31 +156,39 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                  Services
                 </h2>
-                <ul>
+                <ul className="space-y-3">
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/web-development"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      TOS
+                      Web Development
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/mobile-apps"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Privacy Policy
+                      Mobile Apps
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/services/cloud-solutions"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Refund Policy
+                      Cloud Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/ui-ux-design"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                    >
+                      UI/UX Design
                     </Link>
                   </li>
                 </ul>
@@ -184,30 +200,73 @@ const Footer = () => {
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Support & Help
                 </h2>
-                <ul>
+                <ul className="space-y-3">
                   <li>
                     <Link
                       href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Open Support Ticket
+                      Contact Us
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/privacy-policy"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      Terms of Use
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      href="/terms"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
                     >
-                      About
+                      Terms of Service
                     </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/faq"
+                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            {/* Contact */}
+            <div className="w-full px-4 sm:w-1/2 lg:w-3/12 xl:w-3/12 lg:ml-auto">
+              <div className="mb-12">
+                <h2 className="mb-6 text-xl font-bold text-[#112D4E] dark:text-[#F9F7F7]">
+                  Contact Us
+                </h2>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <Phone className="h-5 w-5 text-[#3F72AF]" />
+                    <a
+                      href="tel:+1234567890"
+                      className="text-base text-[#112D4E]/80 hover:text-[#3F72AF] dark:text-[#DBE2EF]/80 dark:hover:text-[#3F72AF]"
+                    >
+                      +251-953-431-572
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-[#3F72AF]" />
+                    <a
+                      href="mailto:info@zufantech.com"
+                      className="text-base text-[#112D4E]/80 hover:text-[#3F72AF] dark:text-[#DBE2EF]/80 dark:hover:text-[#3F72AF]"
+                    >
+                      info@zufantech.com
+                    </a>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <MapPin className="h-5 w-5 text-[#3F72AF]" />
+                    <span className="text-base text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
+                      Addis Ababa, Ethiopia
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -215,27 +274,12 @@ const Footer = () => {
           </div>
 
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
-            </p>
+          <div className="py-6 text-center text-sm text-slate-500 dark:text-slate-400">
+            <p>© {new Date().getFullYear()} Zufan Tech. All Rights Reserved.</p>
+            {/* <p className="text-xs text-slate-500 dark:text-slate-600">
+              Built with <span className="text-red-500">♥</span> by <Link href="https://zufantech.com" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Zufan Team</Link>
+              <span className="ml-1">|</span> <Link href="https://zufantech.com" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">www.zufantech.com</Link>
+            </p> */}
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
@@ -428,7 +472,7 @@ const Footer = () => {
             </defs>
           </svg>
         </div>
-      </footer>
+      </footer >
     </>
   );
 };

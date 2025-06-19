@@ -4,7 +4,7 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section id="services" className="bg-[#DBE2EF] dark:bg-[#112D4E]/50 py-16 md:py-20 lg:py-28 relative overflow-hidden">
+    <section id="services" className="dark:bg-bg-color-dark bg-gray-light py-16 md:py-20 lg:py-28 relative overflow-hidden">
       <div className="container">
         <SectionTitle
           width="700px"

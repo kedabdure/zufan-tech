@@ -1,113 +1,139 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
-import { Cpu, ShieldCheck, Globe, Zap, Code, Users } from "lucide-react";
+import {
+  Zap,
+  Code2,
+  Cpu,
+  ShieldCheck,
+  Globe,
+  Users,
+  Rocket,
+  CircuitBoard,
+  LockKeyhole,
+  Cloud,
+  LayoutTemplate,
+  Gauge
+} from "lucide-react";
 
 const AboutSectionOne = () => {
   const features = [
     {
-      icon: <Zap className="h-5 w-5" />,
-      title: "Blazing Speed",
-      description: "High-performance solutions with fast response times."
+      icon: <Zap className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Lightning Performance",
     },
     {
-      icon: <Code className="h-5 w-5" />,
-      title: "Clean Code",
-      description: "Well-structured and maintainable codebases."
+      icon: <Code2 className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Clean Code Standards",
     },
     {
-      icon: <Cpu className="h-5 w-5" />,
-      title: "Modern Tech",
-      description: "Built with the latest, future-ready tools."
+      icon: <Cpu className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Cutting-Edge Stack",
     },
     {
-      icon: <ShieldCheck className="h-5 w-5" />,
-      title: "Robust Security",
-      description: "Strong protection for your critical data."
+      icon: <ShieldCheck className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Enterprise Security",
     },
     {
-      icon: <Globe className="h-5 w-5" />,
-      title: "Global Reach",
-      description: "Optimized for worldwide scalability and speed."
+      icon: <Globe className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Global Scalability",
     },
     {
-      icon: <Users className="h-5 w-5" />,
-      title: "User Focused",
-      description: "Simple, engaging, and intuitive designs."
+      icon: <Users className="h-5 w-5" strokeWidth={1.5} />,
+      title: "User-Centric Design",
     }
   ];
 
-
   return (
-    <section id="our-expertise" className="bg-gradient-to-b from-[#F9F7F7] to-[#DBE2EF]/30 py-16 dark:from-[#112D4E] dark:to-[#3F72AF]/10 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
+    <section id="our-expertise" className="relative overflow-hidden bg-gradient-to-b from-[#F9F7F7] to-[#DBE2EF]/20 py-12 dark:from-[#0a0a0a] dark:to-[#112D4E]/50 md:py-16 lg:py-24">
+      {/* Decorative elements */}
+      <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#3F72AF]/10 blur-3xl dark:bg-[#3F72AF]/5"></div>
+      <div className="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-[#3F72AF]/10 blur-3xl dark:bg-[#3F72AF]/5"></div>
+
+      <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-stretch">
+          {/* Content Column */}
+          <div className="w-full lg:w-1/2">
             <SectionTitle
               title="Engineering Excellence"
-              paragraph="At Zufan Tech, we transform complex challenges into elegant digital solutions. Our team of seasoned architects and developers combine technical mastery with business acumen to deliver systems that drive measurable results."
-              mb="44px"
+              paragraph="We transform complex business challenges into elegant digital solutions through cutting-edge technology and strategic thinking."
+              mb="40px"
               center={false}
             />
 
-            <div className="mb-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="group flex items-start space-x-4 rounded-xl p-4 transition-all duration-300 hover:bg-[#DBE2EF]/40 dark:hover:bg-[#3F72AF]/10"
+                  className="group relative overflow-hidden rounded-xl bg-white/80 p-5 backdrop-blur-sm transition-all duration-300 hover:shadow-lg dark:bg-[#112D4E]/50"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#3F72AF] p-2 text-[#F9F7F7] shadow-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
-                    {feature.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#112D4E] dark:text-[#F9F7F7]">
-                      {feature.title}
-                    </h3>
-                    <p className="mt-1 text-sm text-[#112D4E]/80 dark:text-[#DBE2EF]/90">
-                      {feature.description}
-                    </p>
+                  <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3F72AF]/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                  <div className="flex items-start">
+                    <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#3F72AF] p-2 text-[#F9F7F7] shadow-md transition-all duration-300 group-hover:rotate-6 group-hover:scale-110">
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold text-[#112D4E] dark:text-white">
+                        {feature.title}
+                      </h3>
+                      {/* <p className="mt-1 text-sm text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
+                      </p> */}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
 
-            <Link
-              href="/about"
-              className="inline-flex items-center rounded-lg bg-[#3F72AF] px-6 py-3 text-sm font-medium text-[#F9F7F7] shadow-md transition-all duration-300 hover:bg-[#112D4E] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3F72AF] focus:ring-offset-2 dark:bg-[#3F72AF] dark:hover:bg-[#112D4E]"
-            >
-              Explore Our Methodology
-              <svg
-                className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/about"
+                className="group relative inline-flex items-center overflow-hidden rounded-lg bg-gradient-to-r from-[#3F72AF] to-[#112D4E] px-6 py-3 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#3F72AF] focus:ring-offset-2"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </Link>
+                <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
+                <span className="relative">Discover Our Process</span>
+                <Rocket className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+              <Link
+                href="/technologies"
+                className="inline-flex items-center rounded-lg border border-[#DBE2EF] bg-white px-6 py-3 text-sm font-medium text-[#112D4E] transition-all duration-300 hover:border-[#3F72AF] hover:text-[#3F72AF] dark:border-[#3F72AF]/20 dark:bg-[#112D4E] dark:text-[#DBE2EF] dark:hover:border-[#3F72AF] dark:hover:text-[#3F72AF]"
+              >
+                <CircuitBoard className="mr-2 h-4 w-4" />
+                Our Technologies
+              </Link>
+            </div>
           </div>
 
-          <div className="relative w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 overflow-hidden rounded-xl shadow-2xl aspect-25/24 max-w-[550px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
+          {/* Image Column */}
+          <div className="relative w-full lg:w-1/2 flex items-center justify-center">
+            <div className="relative aspect-[3/4] max-h-[500px] w-full overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="/images/about/about1.jpg"
-                alt="about image"
+                src="/images/about/zufan-office.png"
+                alt="Zufan Tech engineering team"
                 fill
-                className="drop-shadow-three dark:drop-shadow-none"
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#112D4E]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#112D4E]/70 via-transparent to-transparent"></div>
+
+              {/* Floating tech badges */}
+              <div className="absolute left-4 top-4 flex items-center rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium shadow-sm dark:bg-[#112D4E]/90 dark:text-white">
+                <Cloud className="mr-1 h-3 w-3 text-[#3F72AF]" />
+                Cloud Native
+              </div>
+              <div className="absolute right-4 top-4 flex items-center rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium shadow-sm dark:bg-[#112D4E]/90 dark:text-white">
+                <LayoutTemplate className="mr-1 h-3 w-3 text-[#3F72AF]" />
+                Modern UI
+              </div>
+              <div className="absolute bottom-4 left-4 flex items-center rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium shadow-sm dark:bg-[#112D4E]/90 dark:text-white">
+                <Gauge className="mr-1 h-3 w-3 text-[#3F72AF]" />
+                High Performance
+              </div>
+              <div className="absolute bottom-4 right-4 flex items-center rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium shadow-sm dark:bg-[#112D4E]/90 dark:text-white">
+                <LockKeyhole className="mr-1 h-3 w-3 text-[#3F72AF]" />
+                Secure
+              </div>
             </div>
-            <div className="absolute -top-6 -right-6 -z-10 h-32 w-32 rounded-full bg-[#3F72AF] opacity-20 blur-xl dark:bg-[#DBE2EF] dark:opacity-30" />
-            <div className="absolute -bottom-6 -left-6 -z-10 h-32 w-32 rounded-full bg-[#3F72AF] opacity-20 blur-xl dark:bg-[#DBE2EF] dark:opacity-30" />
           </div>
         </div>
       </div>

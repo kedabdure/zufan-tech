@@ -4,54 +4,64 @@ import { Server, Layers, Cpu } from "lucide-react";
 const AboutSectionTwo = () => {
   const features = [
     {
-      icon: <Server className="h-5 w-5" />,
-      title: "Robust Infrastructure",
-      description: "Enterprise-grade architecture designed for reliability and scalability"
+      icon: <Server className="h-5 w-5" strokeWidth={1.5} />,
+      title: "Cloud Infrastructure",
+      description: "Scalable architecture with 99.99% uptime SLA"
     },
     {
-      icon: <Layers className="h-5 w-5" />,
+      icon: <Layers className="h-5 w-5" strokeWidth={1.5} />,
       title: "Full Stack Expertise",
-      description: "End-to-end solutions from frontend interfaces to backend systems"
+      description: "Seamless integration from UI to database"
     },
     {
-      icon: <Cpu className="h-5 w-5" />,
+      icon: <Cpu className="h-5 w-5" strokeWidth={1.5} />,
       title: "Performance Optimized",
-      description: "Systems fine-tuned for maximum efficiency and speed"
+      description: "Applications with sub-100ms response times"
     }
   ];
 
   return (
-    <section className="bg-[#DBE2EF] py-16 dark:bg-[#112D4E]/80 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="order-last w-full px-4 lg:order-first lg:w-1/2">
-            <div className="relative mx-auto aspect-video max-w-[550px] lg:mr-0">
+    <section className="bg-white py-16 dark:bg-[#0a0a0a] md:py-20 lg:py-24">
+      <div className="container px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-12 lg:flex-row">
+          {/* Image Column */}
+          <div className="w-full lg:w-1/2">
+            <div className="relative aspect-video w-full overflow-hidden rounded-lg">
               <Image
-                src="/images/about/about2.jpg"
+                src="/images/about/zufan-cup.png"
                 alt="Zufan Tech infrastructure"
                 fill
-                className="rounded-lg object-cover shadow-lg"
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px] space-y-8">
+
+          {/* Content Column */}
+          <div className="w-full lg:w-1/2">
+            <div className="space-y-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#3F72AF] p-2 text-[#F9F7F7]">
+                <div key={index} className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#3F72AF] text-white">
                     {feature.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-[#112D4E] dark:text-[#F9F7F7]">
+                    <h3 className="text-lg font-medium text-[#112D4E] dark:text-white">
                       {feature.title}
                     </h3>
-                    <p className="mt-2 text-[#112D4E]/80 dark:text-[#DBE2EF]">
+                    <p className="mt-1 text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
                       {feature.description}
                     </p>
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-10">
+              <button className="rounded-md bg-[#3F72AF] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#112D4E]">
+                Explore Our Tech Stack
+              </button>
             </div>
           </div>
         </div>
