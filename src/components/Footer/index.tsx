@@ -119,7 +119,7 @@ const Footer = () => {
                 <ul className="space-y-3">
                   <li>
                     <Link
-                      href="/services/web-development"
+                      href="/"
                       className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       Home
@@ -127,7 +127,15 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/mobile-apps"
+                      href="/blog"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
                       className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       About Us
@@ -135,7 +143,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/cloud-solutions"
+                      href="/contact"
                       className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       Contact Us
@@ -143,18 +151,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/ui-ux-design"
+                      href="/projects"
                       className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/ui-ux-design"
-                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
-                    >
-                      Services
+                      Projects
                     </Link>
                   </li>
                 </ul>

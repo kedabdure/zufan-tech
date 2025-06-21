@@ -74,7 +74,7 @@ const FAQ = () => {
               <div
                 key={q._id}
                 className={`
-                  rounded-lg border border-[#DBE2EF] bg-[#F9F7F7] transition-all duration-300
+                  rounded-lg border border-[#DBE2EF] bg-slate-50 transition-all duration-300
                   dark:border-[#3F72AF]/30 dark:bg-gray-800
                   ${isActive ? "shadow-md shadow-[#3F72AF]/20" : "hover:shadow-md"}
                 `}
