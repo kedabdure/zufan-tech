@@ -3,10 +3,12 @@ import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
+import FAQ from "@/components/Faq/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import SkillsOrbits from "@/components/SkillOrbits";
 import Testimonials from "@/components/Testimonials";
+import { Factory } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -79,6 +81,7 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <Contact />
+      <FAQ />
     </>
   );
 }
