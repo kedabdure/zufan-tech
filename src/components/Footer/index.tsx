@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12 mb-12">
               <div className="max-w-[400px]">
                 <div className="max-w-[160px] mb-8">
                   <Link href="/" className="inline-block">
@@ -38,7 +38,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
                     <svg
                       width="24"
@@ -58,7 +58,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
                     <svg
                       width="24"
@@ -80,7 +80,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
                     <svg
                       width="24"
@@ -96,7 +96,7 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                   >
                     <svg
                       width="17"
@@ -120,33 +120,41 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/services/web-development"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
-                      Web Development
+                      Home
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/services/mobile-apps"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
-                      Mobile Apps
+                      About Us
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/services/cloud-solutions"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
-                      Cloud Solutions
+                      Contact Us
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/services/ui-ux-design"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
-                      UI/UX Design
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services/ui-ux-design"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
+                    >
+                      Services
                     </Link>
                   </li>
                 </ul>
@@ -162,7 +170,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/services/web-development"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       Web Development
                     </Link>
@@ -170,7 +178,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/services/mobile-apps"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       Mobile Apps
                     </Link>
@@ -178,7 +186,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/services/cloud-solutions"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       Cloud Solutions
                     </Link>
@@ -186,7 +194,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/services/ui-ux-design"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark transition-colors duration-300 hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       UI/UX Design
                     </Link>
@@ -201,41 +209,32 @@ const Footer = () => {
                   Support & Help
                 </h2>
                 <ul className="space-y-3">
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
-                    >
-                      Contact Us
-                    </Link>
-                  </li>
                   <li className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-[#3F72AF]" />
+                    <Phone className="h-5 w-5 font-semibold text-body-color dark:text-body-color-dark" />
                     <a
                       href="tel:+1234567890"
-                      className="text-base text-[#112D4E]/80 hover:text-[#3F72AF] dark:text-[#DBE2EF]/80 dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark dark:hover:text-[#3F72AF]"
                     >
                       +251-953-431-572
                     </a>
                   </li>
                   <li className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-[#3F72AF]" />
+                    <Mail className="font-semibold h-5 w-5 text-body-color dark:text-body-color-dark" />
                     <a
                       href="mailto:info@zufantech.com"
-                      className="text-base text-[#112D4E]/80 hover:text-[#3F72AF] dark:text-[#DBE2EF]/80 dark:hover:text-[#3F72AF]"
+                      className="text-sm font-semibold text-body-color dark:text-body-color-dark hover:text-[#3F72AF] dark:hover:text-[#3F72AF]"
                     >
                       info@zufantech.com
                     </a>
                   </li>
                   <li className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-[#3F72AF]" />
-                    <span className="text-base text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
+                    <MapPin className="h-5 w-5 text-body-color dark:text-body-color-dark" />
+                    <span className="text-sm font-semibold text-body-color dark:text-body-color-dark">
                       Addis Ababa, Ethiopia
                     </span>
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
 
@@ -248,7 +247,61 @@ const Footer = () => {
             </p> */}
           </div>
         </div>
-        <div className="absolute right-0 top-14 z-[-1]">
+        <div className="absolute right-0 top-5 z-[-1]">
+          <svg
+            width="138"
+            height="331"
+            viewBox="0 0 238 531"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              opacity="0.3"
+              x="422.819"
+              y="-70.8145"
+              width="196"
+              height="541.607"
+              rx="2"
+              transform="rotate(51.2997 422.819 -70.8145)"
+              fill="url(#paint0_linear_83:2)"
+            />
+            <rect
+              opacity="0.3"
+              x="426.568"
+              y="144.886"
+              width="59.7544"
+              height="541.607"
+              rx="2"
+              transform="rotate(51.2997 426.568 144.886)"
+              fill="url(#paint1_linear_83:2)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_83:2"
+                x1="517.152"
+                y1="-251.373"
+                x2="517.152"
+                y2="459.865"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_83:2"
+                x1="455.327"
+                y1="-35.673"
+                x2="455.327"
+                y2="675.565"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        {/* <div className="absolute right-0 top-14 z-[-1]">
           <svg
             width="55"
             height="99"
@@ -321,7 +374,7 @@ const Footer = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
         <div className="absolute bottom-24 left-0 z-[-1]">
           <svg
             width="79"
