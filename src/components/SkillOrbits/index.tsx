@@ -24,7 +24,7 @@ import {
 export default function Skills() {
   return (
     <section
-      className="relative z-10 bg-gray-light dark:bg-bg-color-dark md:py-20 lg:py-22"
+      className="relative z-10 bg-gray-light dark:bg-gray-950 py-20 lg:py-22"
     >
       <div className="container">
         <SectionTitle
@@ -33,7 +33,7 @@ export default function Skills() {
           paragraph="We leverage cutting-edge tools and frameworks like React, Python, and Tailwind to deliver scalable, high-performance solutions for your business."
           center
         />
-        <div className="relative -mt-12 flex h-[300px] w-full flex-col items-center justify-center overflow-hidden md:h-[400px] lg:h-[550px]">
+        <div className="relative -mt-12 flex h-[550px] w-full flex-col items-center justify-center overflow-hidden">
           {/* Inner Orbit: Tools */}
           <OrbitingCircles
             iconSize={40}

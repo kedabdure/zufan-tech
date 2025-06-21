@@ -4,7 +4,7 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section id="services" className="dark:bg-bg-color-dark bg-gray-light py-16 md:py-20 lg:py-28 relative overflow-hidden">
+    <section id="services" className="dark:bg-bg-color-dark bg-gray-light py-20 lg:py-28 relative overflow-hidden">
       <div className="container">
         <SectionTitle
           width="700px"
@@ -13,7 +13,7 @@ const Features = () => {
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 -mt-12">
           {featuresData.map((feature) => (
             <SingleFeature key={feature.id} feature={feature} />
           ))}

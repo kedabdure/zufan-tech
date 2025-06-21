@@ -4,24 +4,24 @@ import { Server, Layers, Cpu } from "lucide-react";
 const AboutSectionTwo = () => {
   const features = [
     {
-      icon: <Server className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Server className="h-5 w-5" strokeWidth={2} />,
       title: "Cloud Infrastructure",
       description: "Scalable architecture with 99.99% uptime SLA"
     },
     {
-      icon: <Layers className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Layers className="h-5 w-5" strokeWidth={2} />,
       title: "Full Stack Expertise",
       description: "Seamless integration from UI to database"
     },
     {
-      icon: <Cpu className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Cpu className="h-5 w-5" strokeWidth={2} />,
       title: "Performance Optimized",
       description: "Applications with sub-100ms response times"
     }
   ];
 
   return (
-    <section className="bg-white py-16 dark:bg-[#0a0a0a] md:py-20 lg:py-24">
+    <section className="bg-white py-20 dark:bg-gray-900 md:py-20 lg:py-24">
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-12 lg:flex-row">
           {/* Image Column */}

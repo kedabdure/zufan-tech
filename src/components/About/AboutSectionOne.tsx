@@ -19,33 +19,39 @@ import {
 const AboutSectionOne = () => {
   const features = [
     {
-      icon: <Zap className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Zap className="h-5 w-5" strokeWidth={2} />,
       title: "Lightning Performance",
+      description: "Ultra-fast systems for smooth user experiences."
     },
     {
-      icon: <Code2 className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Code2 className="h-5 w-5" strokeWidth={2.5} />,
       title: "Clean Code Standards",
+      description: "Structured, scalable, and maintainable code."
     },
     {
-      icon: <Cpu className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Cpu className="h-5 w-5" strokeWidth={2.5} />,
       title: "Cutting-Edge Stack",
+      description: "Built with the latest, reliable technologies."
     },
     {
-      icon: <ShieldCheck className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <ShieldCheck className="h-5 w-5" strokeWidth={2.5} />,
       title: "Enterprise Security",
+      description: "Advanced security to protect your data."
     },
     {
-      icon: <Globe className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Globe className="h-5 w-5" strokeWidth={2.5} />,
       title: "Global Scalability",
+      description: "Solutions that grow with your business."
     },
     {
-      icon: <Users className="h-5 w-5" strokeWidth={1.5} />,
+      icon: <Users className="h-5 w-5" strokeWidth={2.5} />,
       title: "User-Centric Design",
+      description: "Intuitive designs focused on user needs."
     }
   ];
 
   return (
-    <section id="our-expertise" className="relative overflow-hidden bg-gradient-to-b from-[#F9F7F7] to-[#DBE2EF]/20 py-12 dark:from-[#0a0a0a] dark:to-[#112D4E]/50 md:py-16 lg:py-24">
+    <section id="our-expertise" className="relative overflow-hidden bg-gradient-to-b from-[#F9F7F7] to-[#DBE2EF]/20 py-20 dark:from-[#0a0a0a] dark:to-[#112D4E]/50 md:py-16 lg:py-24">
       {/* Decorative elements */}
       <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#3F72AF]/10 blur-3xl dark:bg-[#3F72AF]/5"></div>
       <div className="absolute -left-20 bottom-0 h-64 w-64 rounded-full bg-[#3F72AF]/10 blur-3xl dark:bg-[#3F72AF]/5"></div>
@@ -69,15 +75,16 @@ const AboutSectionOne = () => {
                 >
                   <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3F72AF]/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   <div className="flex items-start">
-                    <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#3F72AF] p-2 text-[#F9F7F7] shadow-md transition-all duration-300 group-hover:rotate-6 group-hover:scale-110">
+                    <div className="mr-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#3f71af] p-2 text-[#F9F7F7] shadow-md transition-all duration-300 group-hover:rotate-6 group-hover:scale-110">
                       {feature.icon}
                     </div>
                     <div>
                       <h3 className="text-base font-semibold text-[#112D4E] dark:text-white">
                         {feature.title}
                       </h3>
-                      {/* <p className="mt-1 text-sm text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
-                      </p> */}
+                      <p className="mt-1 text-xs text-[#112D4E]/80 dark:text-[#DBE2EF]/80">
+                        {feature.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -93,13 +100,13 @@ const AboutSectionOne = () => {
                 <span className="relative">Discover Our Process</span>
                 <Rocket className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-              <Link
+              {/* <Link
                 href="/technologies"
                 className="inline-flex items-center rounded-lg border border-[#DBE2EF] bg-white px-6 py-3 text-sm font-medium text-[#112D4E] transition-all duration-300 hover:border-[#3F72AF] hover:text-[#3F72AF] dark:border-[#3F72AF]/20 dark:bg-[#112D4E] dark:text-[#DBE2EF] dark:hover:border-[#3F72AF] dark:hover:text-[#3F72AF]"
               >
                 <CircuitBoard className="mr-2 h-4 w-4" />
                 Our Technologies
-              </Link>
+              </Link> */}
             </div>
           </div>
 

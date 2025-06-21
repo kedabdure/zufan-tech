@@ -113,7 +113,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-8 text-xl font-bold text-black dark:text-white">
                   Quick Links
                 </h2>
                 <ul className="space-y-3">
@@ -155,7 +155,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-8 text-xl font-bold text-black dark:text-white">
                   Services
                 </h2>
                 <ul className="space-y-3">
@@ -197,7 +197,7 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                <h2 className="mb-8 text-xl font-bold text-black dark:text-white">
                   Support & Help
                 </h2>
                 <ul className="space-y-3">
@@ -209,41 +209,6 @@ const Footer = () => {
                       Contact Us
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/privacy-policy"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/terms"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
-                    >
-                      Terms of Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/faq"
-                      className="text-base text-[#112D4E] transition-colors duration-300 hover:text-[#3F72AF] dark:text-[#DBE2EF] dark:hover:text-[#3F72AF]"
-                    >
-                      FAQ
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            {/* Contact */}
-            <div className="w-full px-4 sm:w-1/2 lg:w-3/12 xl:w-3/12 lg:ml-auto">
-              <div className="mb-12">
-                <h2 className="mb-6 text-xl font-bold text-[#112D4E] dark:text-[#F9F7F7]">
-                  Contact Us
-                </h2>
-                <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-[#3F72AF]" />
                     <a
@@ -270,6 +235,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
 
